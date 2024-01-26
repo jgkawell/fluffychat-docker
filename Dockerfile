@@ -1,7 +1,7 @@
 FROM docker.io/alpine:3 as builder
 RUN apk add --no-cache wget
 WORKDIR /app
-RUN wget https://github.com/krille-chan/fluffychat/releases/download/v1.17.1/fluffychat-web.tar.gz
+RUN wget https://github.com/krille-chan/fluffychat/releases/download/v1.17.2/fluffychat-web.tar.gz
 RUN tar -xvf fluffychat-web.tar.gz
 
 FROM docker.io/nginx:alpine
